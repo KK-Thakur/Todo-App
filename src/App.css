@@ -1,0 +1,136 @@
+/* css for app component only */
+
+/*see styles.css at root of project for global css*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  margin-right: 10px;
+  display: inline-block;
+}
+#header{
+  text-align:center;
+  margin-bottom: 24px;
+}
+#main-div{
+  width: 500px;
+  margin: auto;
+}
+#app-title {
+  margin: 20px 0;
+  text-align: center;
+  color: #c1c1c1;
+  font-size: 3em;
+  display: inline;
+  vertical-align: middle;
+}
+
+#container {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+#container p{
+  color: #c1c1c1; font-size: 14px; margin-bottom: 4px;
+}
+.input-text {
+  display: inline;
+  margin: 0;
+  /* border: none; */
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  padding: 7px;
+  width: calc(100% - 120px);
+}
+
+.add-btn {
+  margin: 0 0 0 25px;
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 0.4rem;
+  display: inline-block;
+  border: none;
+}
+#deleteAllBtnDiv{
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: -10px;
+}
+
+#deleteAllBtnDiv button{
+  position: relative;
+  left: calc(100% - 105px);
+}
+.list{
+  width: 100%;
+}
+
+.todo-text{
+  outline: none;
+  border: #ffffff;
+  width: 70%;
+}
+.todo-text-line{
+  text-decoration-line: line-through;
+  background-color: #bfbfbf;
+}
+
+.list ul li button {
+  position: absolute;
+  right: 1%;
+  border: none;
+  
+}
+.list ul li .edit-btn{
+  right: 12%;
+  background-color: inherit;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.list ul li {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  background-color: #ffffff;
+  line-height: 30px;
+  padding: 8px;
+  position: relative;
+  margin-top: 20px;
+  /* cursor: move; */
+  cursor:pointer;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px 1px rgba(0, 0, 0, 0.14),
+      0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.delete-btn {
+  font-size: 14px;
+  background-color:inherit;
+}
+
+.check {
+  accent-color: green;
+  margin-right: 10px;
+}
+
+/* for mobile view */
+
+@media screen and (max-width:500px) {
+  #main-div{
+    width: 100%;
+  }
+  body{
+    background-color: black;
+  }
+}
