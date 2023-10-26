@@ -62,7 +62,7 @@
 
 #deleteAllBtnDiv button{
   position: relative;
-  left: calc(100% - 105px);
+  left: calc(100% - 215px);
 }
 .list{
   width: 100%;
